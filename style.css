@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.container {
+}
+.main {
+  background-image: url("Assets/img/Background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; /* Prevents tiling of the image */
+  background-color: rgba(0, 0, 255, 0.5);
+  background-blend-mode: overlay;
+  /* border-radius: 1rem; */
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  position: fixed;
+  top: 0;
+  height: 4rem;
+  width: 100%;
+  /* background-color: green; */
+}
+
+.logo {
+  font-size: larger;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+}
+.navbar a {
+  color: white;
+  font-size: smaller;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar-btn {
+  background-color: red;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  outline: none;
+  border: 0;
+  width: 3.5rem;
+}
+
+.home {
+  /* background-color: aqua; */
+  display: flex;
+  padding: 3rem;
+  /* color: white; */
+  position: relative;
+  top: 3rem;
+  width: 100%;
+  gap: 4.5rem;
+  justify-content: space-between;
+}
+.home-main {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.curved-text {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.curved-text svg {
+  position: absolute;
+  top: 0.7em; /* Adjust to align the curve */
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.search-form {
+  position: relative;
+  width: 300px;
+}
+.search-form input {
+  padding: 0.5rem;
+  width: 300px;
+  border-radius: 3rem;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+.search-form button {
+  padding: 0.5rem;
+  border-radius: 3rem;
+  outline: 0;
+  border: 0;
+  background: red;
+  color: white;
+  position: absolute;
+  right: 0;
+}
+.home img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
